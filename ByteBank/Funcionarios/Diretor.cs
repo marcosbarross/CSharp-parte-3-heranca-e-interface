@@ -7,13 +7,13 @@ using ByteBank.Sistemas;
 
 namespace ByteBank.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticavel
     {
 
         public string Senha { get; set; }
 
         // a construtor herda argumentos da classe base, recebe a string cpf e passa para a classe base
-        public Diretor(string cpf) : base(cpf, 10000)
+        public Diretor(string cpf) : base(10000, cpf)
         {
 
         }
